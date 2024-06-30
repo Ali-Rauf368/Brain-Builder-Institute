@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #014550;
+}
+
+header {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    height: 50px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+/* Animated text  */
+.animated-text {
+    animation: moveLeftRight 15s linear infinite alternate; /*Animation property will cause it to move left and right continuously for 15 seconds, with a constant speed, and it will repeat this motion indefinitely, alternating direction each time.
+    */
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+  }
+  @keyframes moveLeftRight {
+    0% {
+      transform: translateX(0vw);
+    }
+    50% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(0vw);
+    }
+  }
+  .animated-text:hover {
+    animation-play-state: paused;
+}
+/*mission*/
+.mission{
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+/*Carousal */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 500px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    min-width: 100%;
+    max-height: 50%;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+/*footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.5);;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px 20px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    margin-top: 0;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #ccc;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
